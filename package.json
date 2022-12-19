@@ -16,4 +16,5 @@
     "url": "https://github.com/Abikimoz/frontend-project-44/issues"
   },
   "homepage": "https://github.com/Abikimoz/frontend-project-44#readme"
+  "type": "module"
 }
