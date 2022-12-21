@@ -15,9 +15,12 @@
   "bugs": {
     "url": "https://github.com/Abikimoz/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Abikimoz/frontend-project-44#readme",
   "type": "module",
+  "homepage": "https://github.com/Abikimoz/frontend-project-44#readme",
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
