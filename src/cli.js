@@ -5,9 +5,11 @@ import readlineSync from 'readline-sync';
 //     return `Hello, ${name}!`;
 // }
 
-export function name() {
-    return readlineSync.question('May I have your name? ');    
-};
+function name() {
+  return readlineSync.question('May I have your name? ');
+}
+
+export default name;
 
 // console.log(name());
 // export { name };
