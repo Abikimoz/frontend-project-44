@@ -4,7 +4,7 @@
 
 // const name = readlineSync.question('May I have your name? ');
 
-import { name } from '../src/cli.js';
+import name from '../src/cli.js';
 
 // console.log('node bin/brain-games.js');
 console.log('brain-games!');
