@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 export let userName = '';
 
 function name() {
