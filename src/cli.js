@@ -1,17 +1,11 @@
 import readlineSync from 'readline-sync';
-
-// export function askAboutName() {
-//     const name = readlineSync.question('May I have your name? ');
-//     return `Hello, ${name}!`;
-// }
+export let userName = '';
 
 function name() {
-  return readlineSync.question('May I have your name? ');
+  console.log('brain-games!');
+  console.log('Welcome to the Brain Games!');
+  userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello ${userName}!`);
 }
 
 export default name;
-
-// console.log(name());
-// export { name };
-
-// export default name;
