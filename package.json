@@ -19,7 +19,8 @@
   "homepage": "https://github.com/Abikimoz/frontend-project-44#readme",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
     "@eslint/create-config": "^0.4.2",
@@ -28,6 +29,9 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "eslint": "^8.31.0"
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
   }
 }
