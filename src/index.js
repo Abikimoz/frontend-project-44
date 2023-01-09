@@ -1,10 +1,9 @@
 import readlineSync, { question } from 'readline-sync';
-import questionThree, { questionText, answerLogic } from './games/calcData.js';
 
 export let message = '';
 export let questionEssence = '';
 
-function logic() {
+function logic(questionText, questionThree, answerLogic) {
   console.log(questionText);
   for (let i = 0; i < 3; i += 1) {
     questionEssence = questionThree();
