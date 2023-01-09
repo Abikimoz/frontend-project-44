@@ -1,19 +1,31 @@
 import { questionEssence } from '../index.js';
 
-export const questionText = "What is the result of the expression?";
+export const questionText = "Find the greatest common divisor of given numbers.";
+
+let oneElement = '';
+let twoElement = '';
 
 function questionThree() {
-  const oneElement = Math.ceil(Math.random() * 100);
-  const twoElement = Math.ceil(Math.random() * 100);
-  const allSigns = "+-*+-*+-*+-";
-  const randomAllSigns = allSigns[Math.ceil(Math.random() * 10)];
-  const questionEssence = `${oneElement} ${randomAllSigns} ${twoElement}`;
+  oneElement = Math.ceil(Math.random() * 100);
+  twoElement = Math.ceil(Math.random() * 100);
+  const questionEssence = `${oneElement} ${twoElement}`;
   return questionEssence;
 }
 
 function answerLogic() {
-  const answerTrueEval = eval(questionEssence);
-  const answerTrue = String(answerTrueEval);
+  function gcd_two_numbers(x, y) {
+    if ((typeof x !== 'number') || (typeof y !== 'number'))
+      return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
+    }
+    return x;
+  }
+  const answerTrue = gcd_two_numbers(oneElement, twoElement);
   return answerTrue;
 }
 
