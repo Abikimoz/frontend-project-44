@@ -1,32 +1,25 @@
 import readlineSync, { question } from 'readline-sync';
-import { questionText } from './games/calcData.js';
+import questionThree, { questionText, answerLogic } from './games/calcData.js';
+
+export let message = '';
+export let questionEssence = '';
 
 function logic() {
   console.log(questionText);
-
+  for (let i = 0; i < 3; i += 1) {
+    questionEssence = questionThree();
+    console.log(`Question: ${questionEssence}`);
+    const answer = readlineSync.question('Your answer: ');
+    const result = answerLogic();
+    if (answer === result) {
+      message = 1;
+      console.log('Correct!');
+    } else {
+      message = 0;
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
+      break;
+    }
+  }
 }
-
-
-// export let message = '';
-
-// function even() {
-//   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-//   for (let i = 0; i < 3; i += 1) {
-//     const randomNumber = Math.ceil(Math.random() * 100);
-//     console.log(`Question: ${randomNumber}`);
-//     const answer = readlineSync.question('Your answer: ');
-//     const answerTrue = randomNumber % 2 === 0 ? 'yes' : 'no';
-//     if ((randomNumber % 2 === 0 && answer === 'yes')
-//     || (randomNumber % 2 !== 0 && answer === 'no')) {
-//       message = 1;
-//       console.log('Correct!');
-//     } else {
-//       message = 0;
-//       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerTrue}'.`);
-//       break;
-//     }
-//   }
-//   return message;
-// }
 
 export default logic;
