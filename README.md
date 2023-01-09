@@ -4,3 +4,4 @@
 <a href="https://codeclimate.com/github/Abikimoz/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/299334feb4f050cf8111/maintainability" /></a>
 
 <a href="https://asciinema.org/a/549947" target="_blank"><img src="https://asciinema.org/a/549947.svg" /></a>
+<a href="https://asciinema.org/a/NX5dzxhjRL7TRKh9qxS2udDXT" target="_blank"><img src="https://asciinema.org/a/NX5dzxhjRL7TRKh9qxS2udDXT.svg" /></a>
