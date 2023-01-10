@@ -25,7 +25,7 @@ function answerLogic() {
     }
     return x;
   }
-  const answerTrue = gcd_two_numbers(oneElement, twoElement);
+  const answerTrue = String(gcd_two_numbers(oneElement, twoElement));
   return answerTrue;
 }
 
