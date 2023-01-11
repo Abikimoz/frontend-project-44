@@ -1,5 +1,3 @@
-import { questionEssence } from '../index.js';
-
 export const questionText = 'Find the greatest common divisor of given numbers.';
 
 let oneElement = '';
@@ -13,16 +11,16 @@ function questionThree() {
 }
 
 function answerLogic() {
-  function gcdTwoNumbers(x, y) {
-    if ((typeof x !== 'number') || (typeof y !== 'number')) return false;
-    x = Math.abs(x);
-    y = Math.abs(y);
-    while (y) {
-      const t = y;
-      y = x % y;
-      x = t;
+  function gcdTwoNumbers(oneNumber, twoNumber) {
+    if ((typeof oneNumber !== 'number') || (typeof twoNumber !== 'number')) return false;
+    let oneNumberAbs = Math.abs(oneNumber);
+    let twoNumberAbs = Math.abs(twoNumber);
+    while (twoNumberAbs) {
+      const t = twoNumberAbs;
+      twoNumberAbs = oneNumberAbs % twoNumberAbs;
+      oneNumberAbs = t;
     }
-    return x;
+    return oneNumberAbs;
   }
   const answerTrue = String(gcdTwoNumbers(oneElement, twoElement));
   return answerTrue;
