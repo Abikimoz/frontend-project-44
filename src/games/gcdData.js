@@ -13,7 +13,7 @@ function questionThree() {
 }
 
 function answerLogic() {
-  function gcd_two_numbers(x, y) {
+  function gcdTwoNumbers(x, y) {
     if ((typeof x !== 'number') || (typeof y !== 'number')) return false;
     x = Math.abs(x);
     y = Math.abs(y);
@@ -24,7 +24,7 @@ function answerLogic() {
     }
     return x;
   }
-  const answerTrue = String(gcd_two_numbers(oneElement, twoElement));
+  const answerTrue = String(gcdTwoNumbers(oneElement, twoElement));
   return answerTrue;
 }
 
