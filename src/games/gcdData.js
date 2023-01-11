@@ -18,8 +18,8 @@ function answerLogic() {
       return false;
     x = Math.abs(x);
     y = Math.abs(y);
-    while(y) {
-      var t = y;
+    while (y) {
+      let t = y;
       y = x % y;
       x = t;
     }
