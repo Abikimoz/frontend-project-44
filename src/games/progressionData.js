@@ -1,4 +1,4 @@
-import { questionEssence } from '../index.js';
+// import { questionEssence } from '../index.js';
 
 export const questionText = 'What number is missing in the progression?';
 
@@ -19,7 +19,7 @@ function questionThree() {
   const step = Math.ceil(Math.random() * 100);
   let x = startElement;
   let testResult = '';
-  for (let i = 0; i <= numberElement - 1; i++) {
+  for (let i = 0; i <= numberElement - 1; i += 1) {
     x += step;
     testResult = `${testResult} ${x}`;
   }
