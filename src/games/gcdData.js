@@ -1,6 +1,6 @@
 import { questionEssence } from '../index.js';
 
-export const questionText = "Find the greatest common divisor of given numbers.";
+export const questionText = 'Find the greatest common divisor of given numbers.';
 
 let oneElement = '';
 let twoElement = '';
@@ -14,12 +14,11 @@ function questionThree() {
 
 function answerLogic() {
   function gcd_two_numbers(x, y) {
-    if ((typeof x !== 'number') || (typeof y !== 'number'))
-      return false;
+    if ((typeof x !== 'number') || (typeof y !== 'number')) return false;
     x = Math.abs(x);
     y = Math.abs(y);
     while (y) {
-      let t = y;
+      const t = y;
       y = x % y;
       x = t;
     }
