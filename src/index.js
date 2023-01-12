@@ -1,9 +1,7 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
-export { message, questionEssence };
-
-let message = '';
-let questionEssence = '';
+export let message = '';
+export let questionEssence = '';
 
 function logic(questionText, questionThree, answerLogic) {
   console.log(questionText);
