@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-export let message = '';
+let messageLet;
+
+export const message = messageLet;
 
 function even() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -11,15 +13,15 @@ function even() {
     const answerTrue = randomNumber % 2 === 0 ? 'yes' : 'no';
     if ((randomNumber % 2 === 0 && answer === 'yes')
     || (randomNumber % 2 !== 0 && answer === 'no')) {
-      message = 1;
+      messageLet = 1;
       console.log('Correct!');
     } else {
-      message = 0;
+      messageLet = 0;
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerTrue}'.`);
       break;
     }
   }
-  return message;
+  return messageLet;
 }
 
 export default even;

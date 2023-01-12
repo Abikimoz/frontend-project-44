@@ -1,20 +1,23 @@
 import readlineSync from 'readline-sync';
 
-export let message = '';
-export let questionEssence = '';
+let messageLet;
+let questionEssenceLet;
+
+export const message = messageLet;
+export const questionEssence = questionEssenceLet;
 
 function logic(questionText, questionThree, answerLogic) {
   console.log(questionText);
   for (let i = 0; i < 3; i += 1) {
-    questionEssence = questionThree();
-    console.log(`Question: ${questionEssence}`);
+    questionEssenceLet = questionThree();
+    console.log(`Question: ${questionEssenceLet}`);
     const answer = readlineSync.question('Your answer: ');
     const result = answerLogic();
     if (answer === result) {
-      message = 1;
+      messageLet = 1;
       console.log('Correct!');
     } else {
-      message = 0;
+      messageLet = 0;
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
       break;
     }
