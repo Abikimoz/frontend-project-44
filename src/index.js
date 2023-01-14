@@ -1,15 +1,11 @@
 import readlineSync from 'readline-sync';
 
 let messageLet;
-let questionEssenceLet;
-
-export const message = messageLet;
-export const questionEssence = questionEssenceLet;
 
 function logic(questionText, questionThree, answerLogic) {
   console.log(questionText);
   for (let i = 0; i < 3; i += 1) {
-    questionEssenceLet = questionThree();
+    const questionEssenceLet = questionThree();
     console.log(`Question: ${questionEssenceLet}`);
     const answer = readlineSync.question('Your answer: ');
     const result = answerLogic();
@@ -22,6 +18,7 @@ function logic(questionText, questionThree, answerLogic) {
       break;
     }
   }
+  return (messageLet);
 }
 
 export default logic;
