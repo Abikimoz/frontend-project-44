@@ -10,7 +10,7 @@ function getQuestion() {
   return questionEssence;
 }
 
-function answerLogic() {
+function runRules() {
   function gcdTwoNumbers(oneNumber, twoNumber) {
     if ((typeof oneNumber !== 'number') || (typeof twoNumber !== 'number')) return false;
     let oneNumberAbs = Math.abs(oneNumber);
@@ -26,5 +26,5 @@ function answerLogic() {
   return answerTrue;
 }
 
-export { answerLogic };
+export { runRules };
 export default getQuestion;

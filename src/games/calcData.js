@@ -24,10 +24,10 @@ function getQuestion() {
   return questionEssence;
 }
 
-function answerLogic() {
+function runRules() {
   const answerTrue = String(answerTrueEval);
   return answerTrue;
 }
 
-export { answerLogic };
+export { runRules };
 export default getQuestion;
