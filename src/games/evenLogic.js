@@ -13,10 +13,10 @@ function even() {
     const answerTrue = randomNumber % 2 === 0 ? 'yes' : 'no';
     if ((randomNumber % 2 === 0 && answer === 'yes')
     || (randomNumber % 2 !== 0 && answer === 'no')) {
-      messageLet = 1;
+      messageLet = 'right';
       console.log('Correct!');
     } else {
-      messageLet = 0;
+      messageLet = 'error';
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerTrue}'.`);
       break;
     }
