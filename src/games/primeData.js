@@ -5,7 +5,7 @@ export const questionText = 'Answer "yes" if given number is prime. Otherwise an
 let answerTrue = '';
 let symbolRandom = '';
 
-function questionThree() {
+function getQuestion() {
   symbolRandom = Math.ceil(Math.random() * 10);
   return symbolRandom;
 }
@@ -23,4 +23,4 @@ function answerLogic() {
 }
 
 export { answerLogic };
-export default questionThree;
+export default getQuestion;
