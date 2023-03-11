@@ -30,7 +30,6 @@ sudo npm link
 ```bash
 make brain-even
 ``` 
-<br /><br />
 Реши пример.  
 ```bash
 make brain-calc
