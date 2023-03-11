@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-function name() {
+function getName() {
   console.log('brain-games!');
   console.log('Welcome to the Brain Games!');
   const pushName = readlineSync.question('May I have your name? ');
@@ -8,4 +8,4 @@ function name() {
   return pushName;
 }
 
-export default name;
+export default getName;
