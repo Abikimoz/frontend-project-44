@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 let messageLet;
 
-function logic(questionText, questionThree, answerLogic) {
+function runLogic(questionText, questionThree, answerLogic) {
   console.log(questionText);
   const roundsCount = 3;
   for (let i = 0; i < roundsCount; i += 1) {
@@ -22,4 +22,4 @@ function logic(questionText, questionThree, answerLogic) {
   return (messageLet);
 }
 
-export default logic;
+export default runLogic;
