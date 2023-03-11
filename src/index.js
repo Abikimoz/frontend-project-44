@@ -15,8 +15,7 @@ function runLogic(questionText, questionThree, answerLogic) {
       console.log('Correct!');
     } else {
       messageLet = 'error';
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
-      break;
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
     }
   }
   return (messageLet);
