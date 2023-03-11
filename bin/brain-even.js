@@ -5,5 +5,5 @@ import even from '../src/games/evenLogic.js';
 
 const userName = name();
 const message = even();
-const finalMessage = (message !== 1) ? `Let's try again, ${userName}!` : `Congratulations, ${userName}!`;
+const finalMessage = (message !== 'right') ? `Let's try again, ${userName}!` : `Congratulations, ${userName}!`;
 console.log(finalMessage);

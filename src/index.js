@@ -11,10 +11,10 @@ function logic(questionText, questionThree, answerLogic) {
     const answer = readlineSync.question('Your answer: ');
     const result = answerLogic();
     if (answer === result) {
-      messageLet = 1;
+      messageLet = 'right';
       console.log('Correct!');
     } else {
-      messageLet = 0;
+      messageLet = 'error';
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result}'.`);
       break;
     }
