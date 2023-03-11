@@ -5,8 +5,8 @@ let answerTrueEval = '';
 function getQuestion() {
   const oneElement = Math.ceil(Math.random() * 100);
   const twoElement = Math.ceil(Math.random() * 100);
-  const allSigns = '*+-*';
-  const randomAllSigns = allSigns[Math.ceil(Math.random() * 3)];
+  const allSigns = ['*', '+', '-'];
+  const randomAllSigns = allSigns[Math.floor(Math.random() * 3)];
   const questionEssence = `${oneElement} ${randomAllSigns} ${twoElement}`;
   switch (randomAllSigns) {
     case '+':
