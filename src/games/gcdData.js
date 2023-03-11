@@ -3,7 +3,7 @@ export const questionText = 'Find the greatest common divisor of given numbers.'
 let oneElement = '';
 let twoElement = '';
 
-function questionThree() {
+function getQuestion() {
   oneElement = Math.ceil(Math.random() * 100);
   twoElement = Math.ceil(Math.random() * 100);
   const questionEssence = `${oneElement} ${twoElement}`;
@@ -27,4 +27,4 @@ function answerLogic() {
 }
 
 export { answerLogic };
-export default questionThree;
+export default getQuestion;

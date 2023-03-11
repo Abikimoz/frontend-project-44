@@ -4,7 +4,7 @@ export const questionText = 'What number is missing in the progression?';
 
 let change = '';
 
-function questionThree() {
+function getQuestion() {
   const startElement = Math.ceil(Math.random() * 10);
   let numberElement = Math.ceil(Math.random() * 10);
   if (numberElement < 5) {
@@ -41,4 +41,4 @@ function answerLogic() {
 }
 
 export { answerLogic };
-export default questionThree;
+export default getQuestion;

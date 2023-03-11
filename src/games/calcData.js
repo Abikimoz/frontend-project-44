@@ -2,7 +2,7 @@ export const questionText = 'What is the result of the expression?';
 
 let answerTrueEval = '';
 
-function questionThree() {
+function getQuestion() {
   const oneElement = Math.ceil(Math.random() * 100);
   const twoElement = Math.ceil(Math.random() * 100);
   const allSigns = '*+-*';
@@ -30,4 +30,4 @@ function answerLogic() {
 }
 
 export { answerLogic };
-export default questionThree;
+export default getQuestion;
