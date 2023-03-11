@@ -4,7 +4,8 @@ let messageLet;
 
 function logic(questionText, questionThree, answerLogic) {
   console.log(questionText);
-  for (let i = 0; i < 3; i += 1) {
+  const roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
     const questionEssenceLet = questionThree();
     console.log(`Question: ${questionEssenceLet}`);
     const answer = readlineSync.question('Your answer: ');
