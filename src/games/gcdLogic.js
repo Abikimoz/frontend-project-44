@@ -13,14 +13,14 @@ function getQuestion() {
 function runRules() {
   function gcdTwoNumbers(oneNumber, twoNumber) {
     if ((typeof oneNumber !== 'number') || (typeof twoNumber !== 'number')) return false;
-    let oneNumberAbs = Math.abs(oneNumber);
-    let twoNumberAbs = Math.abs(twoNumber);
-    while (twoNumberAbs) {
-      const t = twoNumberAbs;
-      twoNumberAbs = oneNumberAbs % twoNumberAbs;
-      oneNumberAbs = t;
+    let oneNumberAbsolute = Math.abs(oneNumber);
+    let twoNumberAbsolute = Math.abs(twoNumber);
+    while (twoNumberAbsolute) {
+      const temporaryValue = twoNumberAbsolute;
+      twoNumberAbsolute = oneNumberAbsolute % twoNumberAbsolute;
+      oneNumberAbsolute = temporaryValue;
     }
-    return oneNumberAbs;
+    return oneNumberAbsolute;
   }
   const answerTrue = String(gcdTwoNumbers(oneElement, twoElement));
   return answerTrue;
